@@ -4,6 +4,12 @@ $header3: 3rem;
 $header4: 2.5rem;
 $header5: 2rem;
 $text: 2rem;
+$chatBackgroundColor: #f4f7ff;
+$purpleColor: #e3e3ff;
+$themeColor: #fefdff;
+$blueColor: #7252f1;
+$blueTextColor: #6260b5;
+$pinkColor: #ec6bb0;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
