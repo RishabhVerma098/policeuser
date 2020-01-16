@@ -1,0 +1,9 @@
+.main {
+  float: right;
+  background-color: burlywood;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  transition: width 0.4s ease-in-out;
+}

@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-
-const allReducers = combineReducers({});
+import sliderReducer from "./slider";
+const allReducers = combineReducers({ slider: sliderReducer });
 
 export default allReducers;

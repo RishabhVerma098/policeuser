@@ -1,10 +1,13 @@
 import React from "react";
 import "./app.scss";
+import Panel from "../panel";
+import Main from "../main/main-index";
 
-function App(props) {
+function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Panel />
+      <Main />
     </div>
   );
 }
