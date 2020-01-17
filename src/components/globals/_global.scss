@@ -1,3 +1,23 @@
+$header1: 5rem;
+$header2: 4rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$header5: 2rem;
+$text: 1.5rem;
+$chatBackgroundColor: #f4f7ff;
+$purpleColor: #e3e3ff;
+$themeColor: #fefdff;
+$blueColor: #7252f1;
+$blueTextColor: #6260b5;
+$pinkColor: #ec6bb0;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +59,7 @@ ul {
 
 li,
 p,
-a {
+a,
+text {
   font-size: $text;
 }
