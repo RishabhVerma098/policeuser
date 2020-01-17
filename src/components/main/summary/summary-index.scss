@@ -2,3 +2,9 @@
   flex: 1;
   background-color: chocolate;
 }
+
+@media (max-width: 880px) {
+  .summary {
+    display: none;
+  }
+}
