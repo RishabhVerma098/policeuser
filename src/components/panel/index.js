@@ -11,7 +11,7 @@ function Panel(props) {
       <div className="user">
         <div className="userPhotoName">
           <div className="image"></div>
-          <text>Rahul</text>
+          <p>Rahul</p>
         </div>
         <div className="icon" onClick={() => props.slider()}></div>
       </div>

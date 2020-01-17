@@ -1,0 +1,46 @@
+.chatScreen {
+  width: 100%;
+  height: 70vh;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 3rem 3rem 3rem;
+  overflow-y: auto;
+  .message {
+    max-width: 50%;
+    margin-top: 1rem;
+
+    align-self: flex-start;
+    position: relative;
+    .avatar {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      position: absolute;
+      top: -30%;
+      left: -8%;
+    }
+    .text {
+      width: 100%;
+      font-size: calc(0.2rem + 1vw);
+      background-color: cyan;
+      border-radius: 5px;
+      padding: 1.5rem;
+    }
+  }
+  .police-message {
+    .avatar {
+      background-image: url("../../../../asset/police.png");
+      background-size: cover;
+    }
+  }
+  .user-message {
+    align-self: flex-end;
+    .avatar {
+      top: -30%;
+      left: 92%;
+      background-image: url("../../../../asset/person.jpeg");
+      background-size: cover;
+    }
+  }
+}

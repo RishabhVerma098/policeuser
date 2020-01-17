@@ -1,0 +1,53 @@
+.userInput {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  .bar {
+    border-radius: 5px;
+    width: 80%;
+    background-color: white;
+    height: 7vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+
+    .microphone {
+      width: 10%;
+      height: 100%;
+      background-color: yellow;
+      background-size: cover;
+    }
+    .enterText {
+      width: 85%;
+      height: 100%;
+      position: relative;
+      margin-left: -2rem;
+      input {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        text-decoration: none;
+        border: none;
+        padding-left: 2rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .go {
+      width: 12%;
+      height: 150%;
+      border-radius: 100%;
+      position: absolute;
+      left: 90%;
+      bottom: -20%;
+      background-color: violet;
+    }
+  }
+}
