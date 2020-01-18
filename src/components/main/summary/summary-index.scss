@@ -1,6 +1,39 @@
 .summary {
   flex: 1;
-  background-color: chocolate;
+  background-color: #d2691e;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    align-self: center;
+    margin-top: 2rem;
+  }
+  .data {
+    align-self: center;
+    width: 90%;
+    height: 75%;
+    background-color: blue;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    .card {
+      margin-top: 1.5rem;
+      border-radius: 5px;
+      background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      -webkit-box-shadow: 10px 10px 53px -18px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 10px 10px 53px -18px rgba(0, 0, 0, 0.62);
+      box-shadow: 10px 10px 53px -18px rgba(0, 0, 0, 0.62);
+    }
+  }
+
+  button {
+    align-self: center;
+    width: 30%;
+    height: 40px;
+  }
 }
 
 @media (max-width: 880px) {
