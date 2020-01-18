@@ -3,6 +3,7 @@ import { slider } from "../../store/actions";
 import { connect } from "react-redux";
 import Chat from "./chat/chat-index";
 import Summary from "./summary/summary-index";
+import StepScreen from "../AfterDone";
 import "./main-index.scss";
 function Main(props) {
   return (
@@ -10,8 +11,9 @@ function Main(props) {
       style={props.slide ? { width: "95%" } : { width: "80%" }}
       className="main"
     >
-      <Chat />
-      <Summary />
+      {/* <Chat />
+      <Summary /> */}
+      <StepScreen />
     </section>
   );
 }
