@@ -1,0 +1,36 @@
+.allFir {
+  padding: 2rem 1rem 1rem 8rem;
+
+  .listOfFir {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: rosybrown;
+    width: 80%;
+    height: 85%;
+    overflow-y: auto;
+    .fir {
+      display: flex;
+      width: 100%;
+      height: 40%;
+      background-color: salmon;
+      margin-top: 2rem;
+      .firImage {
+        padding: 2rem;
+        width: 90%;
+        height: 100%;
+        background-color: royalblue;
+      }
+      .firData {
+        padding-left: 2rem;
+        padding-top: 2rem;
+        .timeStamp {
+          padding-top: 0.5rem;
+        }
+        .description {
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

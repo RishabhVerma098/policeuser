@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 import Chat from "./chat/chat-index";
 import Summary from "./summary/summary-index";
 import StepScreen from "../AfterDone";
+import AllFir from "../seeMyFieldFIR";
+import Settings from "../settings";
+import Inbox from "../inbox";
 import "./main-index.scss";
 function Main(props) {
   return (
@@ -13,7 +16,10 @@ function Main(props) {
     >
       {/* <Chat />
       <Summary /> */}
-      <StepScreen />
+      {/* <StepScreen /> */}
+      {/* <AllFir /> */}
+      {/* <Settings /> */}
+      <Inbox />
     </section>
   );
 }

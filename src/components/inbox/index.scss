@@ -1,0 +1,35 @@
+.inbox {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  .inboxList {
+    width: 100%;
+    height: 80%;
+    margin-top: 2rem;
+    overflow-y: auto;
+    padding: 1rem;
+    .message {
+      border-radius: 5px;
+      -webkit-box-shadow: 10px 10px 41px -16px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 41px -16px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 41px -16px rgba(0, 0, 0, 0.75);
+      background-color: seashell;
+      padding: 1rem 2rem 1rem 1rem;
+      margin-top: 1rem;
+      display: flex;
+      .userImage {
+        width: 4rem;
+        height: 4rem;
+        background-color: sandybrown;
+      }
+      .text {
+        padding-left: 2rem;
+        .timeStamp {
+          font-size: 1rem;
+          font-weight: 300;
+          margin-top: 0.4rem;
+        }
+      }
+    }
+  }
+}
