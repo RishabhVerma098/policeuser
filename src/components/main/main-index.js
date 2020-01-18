@@ -7,6 +7,8 @@ import StepScreen from "../AfterDone";
 import AllFir from "../seeMyFieldFIR";
 import Settings from "../settings";
 import Inbox from "../inbox";
+import { Switch, Route } from "react-router-dom";
+
 import "./main-index.scss";
 function Main(props) {
   return (
@@ -14,12 +16,24 @@ function Main(props) {
       style={props.slide ? { width: "95%" } : { width: "80%" }}
       className="main"
     >
-      {/* <Chat />
-      <Summary /> */}
-      {/* <StepScreen /> */}
-      {/* <AllFir /> */}
-      {/* <Settings /> */}
-      <Inbox />
+      <Switch>
+        <Route path="/" exact>
+          <Chat />
+          <Summary />
+        </Route>
+        <Route path="/Steps">
+          <StepScreen />
+        </Route>
+        <Route path="/AllFIR">
+          <AllFir />
+        </Route>
+        <Route path="/settings">
+          <Settings />
+        </Route>
+        <Route path="/inbox">
+          <Inbox />
+        </Route>
+      </Switch>
     </section>
   );
 }
