@@ -5,34 +5,38 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  background-color: $themeColor;
   transition: width 0.4s ease-in-out;
-  padding: 2rem 2rem auto 2rem;
+  padding: 3rem 2rem 4rem 3rem;
   .user {
     display: flex;
     justify-content: space-between;
+
     .userPhotoName {
       display: flex;
-
       flex: 2;
-
       .image {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 100%;
         background-image: url("../../asset/person.jpeg");
         background-size: contain;
+        -webkit-box-shadow: 10px 10px 52px -20px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: 10px 10px 52px -20px rgba(0, 0, 0, 0.72);
+        box-shadow: 10px 10px 52px -20px rgba(0, 0, 0, 0.72);
       }
 
       p {
         align-self: center;
         padding-left: 1.5rem;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
       }
     }
     .icon {
       width: 4rem;
       height: 4rem;
-      margin-right: 1rem;
     }
   }
 
@@ -42,10 +46,13 @@
     margin-top: 50%;
     align-self: center;
     .fir {
-      font-size: calc(0.4rem + 1vw);
-      padding-top: 1.5rem;
-      font-weight: 300;
+      padding-top: 1.7rem;
       display: flex;
+      font-family: "Roboto", sans-serif;
+      h5 {
+        font-weight: 200;
+        font-size: calc(0.2rem + 1vw);
+      }
       img {
         width: 2rem;
         height: 2rem;
