@@ -1,5 +1,9 @@
 import { combineReducers } from "redux";
 import sliderReducer from "./slider";
-const allReducers = combineReducers({ slider: sliderReducer });
+import summaryData from "./summaryData";
+const allReducers = combineReducers({
+  slider: sliderReducer,
+  summaryData: summaryData
+});
 
 export default allReducers;

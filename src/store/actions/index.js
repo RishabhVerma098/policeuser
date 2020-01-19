@@ -3,3 +3,10 @@ export const slider = () => {
     type: "SLIDE"
   };
 };
+
+export const summaryData = data => {
+  return {
+    type: "SUMMARYDATA",
+    payload: data
+  };
+};

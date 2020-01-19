@@ -7,6 +7,7 @@ import StepScreen from "../AfterDone";
 import AllFir from "../seeMyFieldFIR";
 import Settings from "../settings";
 import Inbox from "../inbox";
+
 import { Switch, Route } from "react-router-dom";
 
 import "./main-index.scss";
@@ -17,20 +18,20 @@ function Main(props) {
       className="main"
     >
       <Switch>
-        <Route path="/" exact>
+        <Route path="/app" exact>
           <Chat />
           <Summary />
         </Route>
-        <Route path="/Steps">
+        <Route path="/app/steps">
           <StepScreen />
         </Route>
-        <Route path="/AllFIR">
+        <Route path="/app/allfir">
           <AllFir />
         </Route>
-        <Route path="/settings">
+        <Route path="/app/settings">
           <Settings />
         </Route>
-        <Route path="/inbox">
+        <Route path="/app/inbox">
           <Inbox />
         </Route>
       </Switch>
