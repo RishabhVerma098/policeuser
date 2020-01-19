@@ -1,10 +1,11 @@
+@import "../../../globals/global";
 .userAndPoliceFig {
   width: 100%;
   height: 20vh;
   display: flex;
   justify-content: space-between;
   padding: 3rem 4rem 1rem 4rem;
-  background-color: cornflowerblue;
+  background-color: $chatBackgroundColor;
 
   .userNameDateTime {
   }

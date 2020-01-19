@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./chatScreen.scss";
 import { summaryData } from "../../../../store/actions";
 import { connect } from "react-redux";
+import SimpleBar from "simplebar-react";
+import "simplebar/dist/simplebar.min.css";
 
 class ChatScreen extends Component {
   state = {
@@ -23,7 +25,7 @@ class ChatScreen extends Component {
 
   render() {
     return (
-      <div className="chatScreen">
+      <SimpleBar className="chatScreen">
         <div className="police-message message">
           <div
             className="avatar"
@@ -40,16 +42,7 @@ class ChatScreen extends Component {
             elit quis irure non pariatur.
           </div>
         </div>
-        <div className="police-message message">
-          <div
-            className="avatar"
-            onClick={() => this.props.summaryData(this.state.Data)}
-          ></div>
-          <div className="text">
-            loremCillum velit consectetur eu qui ex incididunt ea ex esse in.
-          </div>
-        </div>
-      </div>
+      </SimpleBar>
     );
   }
 }

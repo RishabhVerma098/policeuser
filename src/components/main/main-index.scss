@@ -1,6 +1,8 @@
+@import "../globals/global";
+
 .main {
   float: right;
-  background-color: burlywood;
+  background-color: $chatBackgroundColor;
   width: 90%;
   height: 100vh;
   display: flex;
