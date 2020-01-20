@@ -1,5 +1,26 @@
+@import "../../globals/global";
 .leftside {
-  width: 40%;
+  width: 60%;
   height: 100vh;
-  background-color: burlywood;
+  background-color: #22275e;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .text {
+    display: flex;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 2rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { slider } from "../../store/actions";
+import { slider, handlePanelList } from "../../store/actions";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./index.scss";
@@ -28,7 +28,6 @@ class Panel extends React.Component {
   };
 
   render() {
-    console.log(this.state.active);
     return (
       <section
         style={this.props.slide ? { width: "5%" } : { width: "20%" }}
@@ -72,22 +71,22 @@ class Panel extends React.Component {
               )}
             </div>
           </Link>
-          <Link to="/app/settings">
+          <Link to="/app/inbox">
             <div className="fileFIR fir" onClick={() => this.handleColor(2)}>
-              <img src={require("../../asset/icons/settings.svg")} alt="FIR" />
+              <img src={require("../../asset/icons/inbox.svg")} alt="FIR" />
               {this.props.slide ? null : (
                 <h5 style={this.state.active[2] ? { color: "#EC6BB0" } : null}>
-                  Settings
+                  Inbox
                 </h5>
               )}
             </div>
           </Link>
-          <Link to="/app/inbox">
+          <Link to="/app/settings">
             <div className="fileFIR fir" onClick={() => this.handleColor(3)}>
-              <img src={require("../../asset/icons/inbox.svg")} alt="FIR" />
+              <img src={require("../../asset/icons/settings.svg")} alt="FIR" />
               {this.props.slide ? null : (
                 <h5 style={this.state.active[3] ? { color: "#EC6BB0" } : null}>
-                  Inbox
+                  Settings
                 </h5>
               )}
             </div>
@@ -99,10 +98,10 @@ class Panel extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return { slide: state.slider };
+  return {
+    slide: state.slider,
+    handlePanelListReducer: state.handlePanelListReducer.active
+  };
 };
 
-export default connect(mapStateToProps, { slider })(Panel);
-
-// <h3>panel side</h3>
-//       <button onClick={() => props.slider()}>Go</button>
+export default connect(mapStateToProps, { slider, handlePanelList })(Panel);

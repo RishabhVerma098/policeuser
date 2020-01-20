@@ -22,47 +22,57 @@ class SignUp extends React.Component {
   };
   render() {
     return (
-      <div className="form">
-        <form onSubmit={this.handleSubmit}>
-          <h1>Sign Up For An Account</h1>
-
-          <label>Username</label>
-          <input
-            name="name"
-            placeholder="Username"
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-          <br />
-
-          <label>Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-          />
-          <br />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-
-          <input
-            type="number"
-            name="age"
-            placeholder="age"
-            value={this.state.age}
-            onChange={this.handleChange}
-          />
-
-          <input type="submit" />
-        </form>
+      <div className="formholder">
+        <div className="form">
+          <form onSubmit={this.handleSubmit}>
+            <h1>Sign Up</h1>
+            <div className="username style">
+              <label>Username</label>
+              <input
+                name="name"
+                placeholder="Username"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+              <br />
+            </div>
+            <div className="password style">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={this.state.password}
+                onChange={this.handleChange}
+              />
+              <br />
+            </div>
+            <div className="email style">
+              <label>email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="age style">
+              <label>age</label>
+              <input
+                type="number"
+                name="age"
+                placeholder="age"
+                value={this.state.age}
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="submit">
+              <input type="submit" />
+            </div>
+          </form>
+          <div className="login">Sign In?</div>
+        </div>
       </div>
     );
   }

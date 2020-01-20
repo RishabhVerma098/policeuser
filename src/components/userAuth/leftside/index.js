@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import "./index.scss";
+
 class LeftSide extends Component {
-  state = {};
+  state = {
+    feature: ["feature1", "feature2", "feature3"]
+  };
+
   render() {
     return (
       <div className="leftside">
-        <h1>hello</h1>
+        <img src={require("../../../asset/unDraw.svg")} alt="image" />
+        <div className="text">
+          <h1>{this.state.feature[0]}</h1>
+        </div>
       </div>
     );
   }

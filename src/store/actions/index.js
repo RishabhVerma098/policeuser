@@ -67,3 +67,42 @@ const loginUser = userObj => {
     payload: userObj
   };
 };
+
+export const handlePanelList = num => {
+  console.log(num);
+  return {
+    type: "PANEL_LIST",
+    payload: num
+  };
+};
+
+export const allFirsPassNetwork = userId => {
+  return dispatch => {
+    return fetch("http://localhost:8000", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({ userId })
+    })
+      .then(resp => {
+        const json = resp.json();
+        return json;
+      })
+      .then(data => {
+        if (data.message) {
+          console.log(data.message);
+        } else {
+          dispatch(allFirsPass(data));
+        }
+      });
+  };
+};
+
+export const allFirsPass = data => {
+  return {
+    type: "ALLFIROFUSER",
+    payload: data
+  };
+};

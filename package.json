@@ -15,13 +15,16 @@
     "react-scripts": "3.3.0",
     "react-simple-chatbot": "^0.6.1",
     "react-speech-recognition": "^2.0.4",
+    "react-text-carousel": "^0.1.1",
+    "react-typing-animation": "^1.6.2",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "rsuite": "^4.2.0",
     "simplebar-react": "^2.1.0",
     "speech-to-text": "^2.9.1",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "typewriter-effect": "^2.12.2"
   },
   "scripts": {
     "start": "react-scripts start",
